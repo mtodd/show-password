@@ -1,0 +1,3 @@
+h1. Show Password
+
+A jQuery plugin to change a password field to a regular text input field.
