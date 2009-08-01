@@ -13,7 +13,7 @@
     <script src="show-password.js" type="text/javascript" charset="utf-8"></script>
     <script type="text/javascript" charset="utf-8">
       $(document).ready(function() {
-        $("input:password").showPassword("#show-password", {reveal:"#show-password-toggle"});
+        $("#show-password").showPasswordToggle(["password", "confirm-password"], { reveal: "show-password-toggle" });
       });
       // $(document).ready(function() {
       //   $("input:password").chromaHash({number: 3});
@@ -52,13 +52,13 @@
         <label>Password</label>
         <input type="password" name="password" value="asdf" id="password">
         
+        <label>Confirm Password</label>
+        <input type="password" name="confirm-password" value="asdf" id="confirm-password">
+        
         <div id="show-password-toggle" style="display: none;">
           <input id="show-password" type="checkbox" />
           <label for="show-password" id="show-password-label">Show Password</label>
         </div>
-        
-        <label>Confirm Password</label>
-        <input type="password" name="confirm-password" value="asdf" id="confirm-password">
       </fieldset>
       
       <hr/>

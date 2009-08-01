@@ -8,27 +8,29 @@
 
 (function($){
   $.fn.extend({
-    showPassword: function(toggle_element, options) {
+    showPasswordToggle: function(fields, options) {
+      if(options == undefined) options = {};
       
-      var defaults = {
-          reveal: null
-      };
+      var obj = $(this);
       
-      var options = $.extend(defaults, options);
-      if(options.reveal != null) $(options.reveal).show();
+      // $.each(fields, function(i) { alert(typeof fields[i]); })
+      
+      if(options.reveal != undefined) {
+        $("#"+options.reveal).show();
+      }
       
       return this.each(function() {
         
-        var o      = options;
-        var obj    = $(this);
-        var toggle = $(toggle_element);
-        
         obj.each(function(e) {
-          toggle.bind('change', function(e) {
-            if(obj.type == "text"){ new_type = "password"; } else { new_type = "text"; }
-            new_obj = obj.clone(true);
-            new_obj.attr("type", new_type);
-            obj.replaceWith(new_obj);
+          obj.bind('change', function(e) {
+            $.each(fields, function(i) {
+              field = $("#"+fields[i]);
+              if(field.attr('type') == "text"){ new_type = "password"; } else { new_type = "text"; }
+              new_field = field.clone();
+              new_field.attr("id", fields[i]);
+              new_field.attr("type", new_type);
+              field.replaceWith(new_field);
+            });
           });
         });
         
