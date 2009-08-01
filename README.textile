@@ -30,11 +30,13 @@ h2. Usage
 
 h2. Demo
 
-"http://mtodd.github.com/show-password/":http://mtodd.github.com/show-password/
+"http://mtodd.github.com/projects/show-password/":http://mtodd.github.com/projects/show-password/
 
 h2. Requirements
 
 * jQuery 1.3+
+
+*NOTE*: May not work in IE. Will be tested soon.
 
 h2. License
 
