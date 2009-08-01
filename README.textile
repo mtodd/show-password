@@ -39,7 +39,7 @@ h2. Usage
 
 h2. Demo
 
-http://mtodd.github.com/show-password/example.html
+"http://mtodd.github.com/show-password/":http://mtodd.github.com/show-password/
 
 h2. Requirements
 
