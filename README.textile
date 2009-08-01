@@ -5,10 +5,9 @@ vice versa.
 
 h2. Motivation
 
-Jakob Nielsen's recent article
-"Stop Passowrd Masking":http://www.useit.com/alertbox/passwords.html raises
-concerns over the negative usability implications of masking password fields
-on the web. He summarizes:
+Jakob Nielsen's recent article "Stop Passowrd Masking":http://www.useit.com/alertbox/passwords.html
+raises concerns over the negative usability implications of masking password
+fields on the web. He summarizes:
 
 <blockquote>
   Usability suffers when users type in passwords and the only feedback they get
